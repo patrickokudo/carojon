@@ -25,8 +25,8 @@ const App = () => {
         <a href="#">Display Users</a>
       </div>
       <div className="users">
-        <p className="firstname"></p>
-        <p className="lastname"></p>
+        <p className="username"></p>
+        <p className="name"></p>
         <p className="email"></p>
         <p className="telephone"></p>
         <button>Remove User</button>

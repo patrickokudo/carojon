@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react";
 import { getAllUsers, deleteUser } from "../../UserServices/UserServices";
+import "./index.css";
 
 const UserList = () => {
   const [users, setUsers] = useState([]);
@@ -24,9 +25,9 @@ const UserList = () => {
       <h2>User List</h2>
       <ul>
         {users.map((user) => (
-          <li key={user.id}>
+          <li className="users" key={user.id}>
             {user.name} - {user.email}
-            <button onClick={() => handleDelete(user.id)}>Delete</button>
+            <button onClick={() => handleDelete(user.id)}>Remove User</button>
           </li>
         ))}
       </ul>
