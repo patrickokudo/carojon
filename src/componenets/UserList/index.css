@@ -87,6 +87,16 @@ button {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
+.remove-button {
+  background-color: #fff;
+  color: #810ca8;
+  padding: 0.2rem 0.8rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
 form input {
   margin: auto;
   color: #2d033b;
@@ -101,14 +111,70 @@ form input {
   flex-direction: column;
   margin-bottom: 1rem;
 }
-form {
+input {
+  margin: auto;
   color: #e5b8f4;
   margin-bottom: 1.5rem;
-}
-
-.formidv {
   display: grid;
+  grid-rows: 1fr;
+  width: 30vw;
+  margin-bottom: 2rem;
+}
+label {
+  margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 700px) {
+form {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+/* @media screen and (max-width: 1440px){
+  .remove-icon {
+    display: none;
+  } */
+}
+
+@media screen and (max-width: 500px) {
+  .users {
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 90vw;
+    height: 2rem;
+    background-color: #c147e9;
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2rem;
+    /* gap: 1rem; */
+    justify-items: start;
+  }
+  .users p {
+    color: #fff;
+    font-size: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #c147e9;
+  }
+  form input {
+    margin: auto;
+    color: #2d033b;
+    font-size: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #e5b8f4;
+    height: 1rem;
+    border: none;
+    border-radius: 4px;
+    display: grid;
+    margin-bottom: 1rem;
+    width: 40vw;
+  }
+  .remove-icon {
+    display: block;
+    border: none;
+    background: none;
+  }
+  .remove-button {
+    display: none;
+  }
 }

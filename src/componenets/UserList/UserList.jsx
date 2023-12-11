@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { getAllUsers, deleteUser } from "../../UserServices/UserServices";
 import "./index.css";
+import { RiCloseLine } from "react-icons/ri";
 
 const UserList = () => {
   const [users, setUsers] = useState([]);
@@ -16,7 +17,7 @@ const UserList = () => {
   }, []);
 
   const handleDelete = async (userId) => {
-    await deleteUser(userId);
+    await deleteUser, RiCloseLine(userId);
     setUsers(users.filter((user) => user.id !== userId));
   };
 
@@ -31,7 +32,18 @@ const UserList = () => {
             <p>{user.email}</p>
             <p>{user.phone}</p>
 
-            <button onClick={() => handleDelete(user.id)}>Remove User</button>
+            <button
+              className="remove-button"
+              onClick={() => handleDelete(user.id)}
+            >
+              Remove User
+            </button>
+            {/* <div className="remove-icon"></div>
+            <RiCloseLine
+              color="#fff"
+              size={16}
+              onClick={() => handleDelete(user.id)}
+            /> */}
           </li>
         ))}
       </ul>

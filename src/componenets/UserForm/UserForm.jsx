@@ -1,6 +1,5 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
-// import { addUser } from "../services/userServices.js";
 import { addUser } from "../../UserServices/UserServices.jsx";
 
 // eslint-disable-next-line react/prop-types

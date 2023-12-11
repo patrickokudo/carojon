@@ -8,3 +8,15 @@
   border-bottom-right-radius: 50px;
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 700px) {
+  .heading {
+    color: #e5b8f4;
+    font-size: 2rem;
+    background-color: #810ca8;
+    padding-top: 1rem;
+    height: 8rem;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    margin-bottom: 2rem;
+  }
+}
