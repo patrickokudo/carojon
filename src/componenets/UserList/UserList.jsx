@@ -26,7 +26,11 @@ const UserList = () => {
       <ul>
         {users.map((user) => (
           <li className="users" key={user.id}>
-            {user.name} - {user.email}
+            <p>{user.username}</p>
+            <p>{user.name}</p>
+            <p>{user.email}</p>
+            <p>{user.phone}</p>
+
             <button onClick={() => handleDelete(user.id)}>Remove User</button>
           </li>
         ))}

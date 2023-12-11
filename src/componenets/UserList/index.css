@@ -65,11 +65,9 @@
   height: 4rem;
   background-color: #c147e9;
   border-radius: 16px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 10rem;
+  justify-items: start;
 }
 .users p,
 button {
@@ -110,4 +108,7 @@ form {
 
 .formidv {
   display: grid;
+}
+
+@media screen and (max-width: 700px) {
 }

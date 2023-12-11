@@ -20,15 +20,18 @@ const UserForm = ({ onAddUser }) => {
       phone,
     };
 
-    const addedUser = await addUser(newUser);
-    onAddUser(addedUser);
+    try {
+      const addedUser = await addUser(newUser);
+      onAddUser(addedUser);
 
-    setUserName("");
-    setName("");
-    setEmail("");
-    setPhone("");
+      setUserName("");
+      setName("");
+      setEmail("");
+      setPhone("");
+    } catch (error) {
+      console.log("error");
+    }
   };
-
   return (
     <div>
       <h2>Add User</h2>
